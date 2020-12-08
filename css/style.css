@@ -1,0 +1,157 @@
+
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Navigation Bar:Logo and Images */
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Fondamento', cursive;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100%;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: '';
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100%;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    font-family: 'Fondamento', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+.services-container{
+    margin-top: 90px;
+}
+#services
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Fondamento', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Fondamento', cursive;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
